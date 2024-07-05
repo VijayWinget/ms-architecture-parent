@@ -1,0 +1,14 @@
+CREATE TABLE t_order_line_items (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    sku_code VARCHAR(255) NOT NULL,
+    price DECIMAL(19, 4) NOT NULL,
+    quantity INT NOT NULL,
+);
+
+CREATE TABLE t_orders (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    order_number VARCHAR(255) NOT NULL
+);
+
+TRUNCATE `t_orders`;
+TRUNCATE `t_order_line_items`;
