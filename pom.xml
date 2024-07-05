@@ -11,21 +11,16 @@
 	<groupId>com.microservice</groupId>
 	<artifactId>ms-architecture-old</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>ms-architecture-parent</name>
 	<description>parent-service</description>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
+	<modules>
+		<module>product-service</module>
+		<module>order-service</module>
+		<module>inventory-service</module>
+		<module>test</module>
+
+	</modules>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
